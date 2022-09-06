@@ -1013,15 +1013,16 @@ float: left;
 }
 @media screen and (max-width: 600px) {
     #header-mockup {
-        left:auto;
+        display: none;
+        /* left:auto;
         transform: translate(0, 0);
         left: auto;
         right: -150px;
         bottom:-130px;
-        width:350px;
+        width:350px; */
     }
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     #header-mockup {
         bottom:-110px;
         width:300px;
@@ -1031,7 +1032,7 @@ float: left;
     #header-mockup {
         display: none;
     }
-}
+} */
 
 
 /* ======= Slider style ======= */
