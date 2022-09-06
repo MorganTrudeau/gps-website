@@ -289,6 +289,11 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
     background-position: left;
 }
+.bg-icon {
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .bg-fixed {
     background-attachment: fixed;
 }
@@ -450,6 +455,10 @@ hr {
     list-style: revert !important;
     padding: revert !important;
 
+}
+
+.square {
+    background-color: rgba(0,0,0,0.01) !important;
 }
 
 /* ======= Owl-Theme custom style ======= */
@@ -1534,8 +1543,6 @@ float: left;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
-    background-size: cover;
-    background-position: center center;
 }
 .services-feat .square-flip {
     min-height: 420px;
@@ -1547,8 +1554,6 @@ float: left;
     height: 100%;
 }
 .services-feat .square {
-    background-size: cover;
-    background-position: center center;
     -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
     transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
     -o-transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);

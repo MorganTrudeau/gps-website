@@ -58,7 +58,7 @@ $(function () {
 	});
 	
 	// Sections background image from data background
-	var pageSection = $(".bg-img, section");
+	var pageSection = $(".bg-img, .bg-icon, section");
 	pageSection.each(function (indx) {
 		if ($(this).attr("data-background")) {
 			$(this).css("background-image", "url(" + $(this).data("background") + ")");
