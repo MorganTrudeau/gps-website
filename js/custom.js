@@ -21,10 +21,7 @@
 
 $(function () {
 	"use strict";
-	
-	// Preloader
-	$("#preloader").fadeOut(900);
-	$(".preloader-bg").delay(800).fadeOut(900);
+
 	var wind = $(window);
 	
 	// ScrollIt
@@ -37,6 +34,12 @@ $(function () {
 		onPageChange: null, // function(pageIndex) that is called when page is changed
 		topOffset: -70 // offste (in px) for fixed top navigation
 	});
+
+	wind.on('load', function() {
+		// Preloader
+		$("#preloader").fadeOut(250);
+		$(".preloader-bg").delay(200).fadeOut(250);
+	})
 	
 	// Navbar scrolling background
 	wind.on("scroll", function () {
