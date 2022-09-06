@@ -23,6 +23,10 @@ $(function () {
 	"use strict";
 
 	var wind = $(window);
+
+	// Preloader
+	$("#preloader").fadeOut(250);
+	$(".preloader-bg").delay(200).fadeOut(250);
 	
 	// ScrollIt
 	$.scrollIt({
@@ -35,11 +39,11 @@ $(function () {
 		topOffset: -70 // offste (in px) for fixed top navigation
 	});
 
-	wind.on('load', function() {
-		// Preloader
-		$("#preloader").fadeOut(250);
-		$(".preloader-bg").delay(200).fadeOut(250);
-	})
+	// wind.on('load', function() {
+	// 	// Preloader
+	// 	$("#preloader").fadeOut(250);
+	// 	$(".preloader-bg").delay(200).fadeOut(250);
+	// })
 	
 	// Navbar scrolling background
 	wind.on("scroll", function () {
