@@ -442,6 +442,15 @@ hr {
     background: #000
 }
 
+.list {
+    margin-bottom: 20px;
+}
+
+.list, .list li {
+    list-style: revert !important;
+    padding: revert !important;
+
+}
 
 /* ======= Owl-Theme custom style ======= */
 .owl-theme .owl-dots .owl-dot span {
@@ -2646,7 +2655,8 @@ line-height: 1em;
      height: 180px
  }
  .clients img {
-     transition: all 0.4s ease-in-out
+     transition: all 0.4s ease-in-out;
+     width: 150px;
  }
 .clients .client-logo:hover {
     background: #323232;
