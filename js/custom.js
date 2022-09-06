@@ -189,7 +189,7 @@ $(function () {
 		loop: true
 		, margin: 30
 		, dots: true
-		, mouseDrag: true
+		, mouseDrag: false
 		, autoplay: false
 		, responsiveClass: true
 		, responsive: {
@@ -249,6 +249,7 @@ $(function () {
 			, dots: true
 			, margin: 0
 			, autoplay: true
+			, mouseDrag: false
 			, autoplayTimeout: 6000
 			, smartSpeed: 500
 			, nav: false
@@ -261,6 +262,7 @@ $(function () {
 			, dots: true
 			, margin: 0
 			, autoplay: true
+			, mouseDrag: false
 			, autoplayTimeout: 6000
 			, smartSpeed: 500
 			, animateOut: 'fadeOut'
