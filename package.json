@@ -1,0 +1,31 @@
+{
+  "name": "gps-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node_modules/.bin/gulp start",
+    "watch": "node_modules/.bin/gulp watch",
+    "dist": "node_modules/.bin/gulp",
+    "prettier": "prettier --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorganTrudeau/gps-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorganTrudeau/gps-website/issues"
+  },
+  "homepage": "https://github.com/MorganTrudeau/gps-website#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-nunjucks": "^5.1.0",
+    "merge-stream": "^2.0.0",
+    "prettier": "^2.7.1"
+  }
+}
