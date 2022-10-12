@@ -644,7 +644,7 @@ hr {
     color: #999;
 }
 .nav-scroll .logo {
-    width: 100px;
+    width: 125px;
     height: 27px;
 }
 .nav-scroll .logo-img {
@@ -717,8 +717,8 @@ float: left;
 }
 .logo {
     padding: 0;
-    width: 100px;
-    height: 27px;
+    width: 125px;
+    /* height: 27px; */
     text-align: center;
 }
 .logo-img {
