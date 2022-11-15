@@ -132,9 +132,6 @@ $(function () {
 		contentWayPoint();
 	});
 	
-	//  YouTubePopUp
-	$("a.vid").YouTubePopUp();
-	
 	// Parallax Slider 
 	$(document).ready(function () {
 		var owl = $('.parallax-header .owl-carousel');
