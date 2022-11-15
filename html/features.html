@@ -1,148 +1,212 @@
 {% extends "parts/template.html" %} {% set page ='features' %} {% block meta %}
 <title>RECONO GPS - Asset Tracking Services</title>
-<meta content="Secure, track and manage your heavy duty assets on every job site from your phone." name="description" />
-<meta content="gps,track,asset,tracking,excavator,skid steer,job site,fleet" name="keywords" />
-{% endblock %}
-
-{% block main %}
+<meta
+  content="Secure, track and manage your heavy duty assets on every job site from your phone."
+  name="description"
+/>
+<meta
+  content="gps,track,asset,tracking,excavator,skid steer,job site,fleet"
+  name="keywords"
+/>
+{% endblock %} {% block main %}
 
 <main id="main">
-
-    <!-- Header Banner -->
-    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-darkgray="4" data-background="img/slider/world-gps-asset-tracking.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center caption mt-90">
-                    <h1>Tracking Features</h1>
-                </div>
-            </div>
+  <!-- Header Banner -->
+  <div
+    class="banner-header section-padding valign bg-img bg-fixed"
+    data-overlay-darkgray="4"
+    data-background="img/slider/world-gps-asset-tracking.jpg"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center caption mt-90">
+          <h1>Tracking Features</h1>
         </div>
+      </div>
     </div>
-    <!-- hr -->
-    <hr class="line-vr-section">
-    <!-- Services -->
-    <div class="services-feat section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-icon" data-background="img/features/gps-asset-tracking-feature.png">
-                            <div class="square-container d-flex align-items-end justify-content-center">
-                                <div class="box-title">
-                                    <h4>Asset Tracking</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Asset Tracking</h4>
-                                <p>Track the exact location of your objects (vehicles, people, phones, bikes, containers, etc.) online and in real-time. Select any map option: Google, Satellite, OSM, etc.</p>
-                                <p>View additional information about the tracked objects, including their speed, exact address, fuel consumption, travel history, etc.</p>
-                            </div>
-                        </div>
-                    </div>
+  </div>
+  <!-- hr -->
+  <hr class="line-vr-section" />
+  <!-- Services -->
+  <div class="services-feat section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="square-flip">
+            <div
+              class="square bg-icon"
+              data-background="img/features/gps-asset-tracking-feature.png"
+            >
+              <div
+                class="square-container d-flex align-items-end justify-content-center"
+              >
+                <div class="box-title">
+                  <h4>Asset Tracking</h4>
                 </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-icon" data-background="img/features/geo-fencing-feature.png">
-                            <div class="square-container d-flex align-items-end justify-content-center">
-                                <div class="box-title">
-                                    <h4>Geo Fencing</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Geo Fencing</h4>
-                                <p>The Geo fencing feature enables you to set up geographic boundaries around the areas of your interest. Receive automated alerts when the object enters or leaves marked boundaries.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-icon" data-background="img/features/maintenance-alerts-feature.png">
-                            <div class="square-container d-flex align-items-end justify-content-center">
-                                <div class="box-title">
-                                    <h4>Mechanical</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Mechanical</h4>
-                                <p>Easily stay on top of preventative maintenance to prevent costly repairs.</p>
-                                <p>The maintenance tool will enable you to setup a vehicle maintenance schedule to remind you of: oil changes, engine checks, tire rotations, license renewals and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-icon" data-background="img/features/asset-tracking-notification-feature.png">
-                            <div class="square-container d-flex align-items-end justify-content-center">
-                                <div class="box-title">
-                                    <h4>Instant Notifications</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Instant Notifications</h4>
-                                <p>Receive instant alerts about your tracked object, know when it enters or exits a geo-zone, when it is speeding and determine its stopovers. SOS alarms will turn on in case of any theft.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-icon" data-background="img/features/fuel-monitoring-feature.png">
-                            <div class="square-container d-flex align-items-end justify-content-center">
-                                <div class="box-title">
-                                    <h4>Fuel Monitoring</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Fuel Monitoring</h4>
-                                <p>Easily check the tank’s fuel level and fuel consumption along the route in real-time.</p>
-                                <p>Receive instant notiﬁcation in case a fuel drop occurs, along with a relevant fuel report (with graph)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="square-flip">
-                        <div class="square bg-icon" data-background="img/features/engine-remote-immobilization-feature.png">
-                            <div class="square-container d-flex align-items-end justify-content-center">
-                                <div class="box-title">
-                                    <h4>Remote Immobilization</h4>
-                                </div>
-                            </div>
-                            <div class="flip-overlay"></div>
-                        </div>
-                        <div class="square2">
-                            <div class="square-container2">
-                                <h4>Remote Immobilization</h4>
-                                <p>Remotely shut off your engine from your phone to prevent ignition and stop theft. Have peace of mind when leaving your machine on job sites.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="square2">
+              <div class="square-container2">
+                <h4>Asset Tracking</h4>
+                <p>
+                  Track the exact location of your objects (vehicles, people,
+                  phones, bikes, containers, etc.) online and in real-time.
+                  Select any map option: Google, Satellite, OSM, etc.
+                </p>
+                <p>
+                  View additional information about the tracked objects,
+                  including their speed, exact address, fuel consumption, travel
+                  history, etc.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="square-flip">
+            <div
+              class="square bg-icon"
+              data-background="img/features/geo-fencing-feature.png"
+            >
+              <div
+                class="square-container d-flex align-items-end justify-content-center"
+              >
+                <div class="box-title">
+                  <h4>Geo Fencing</h4>
+                </div>
+              </div>
+            </div>
+            <div class="square2">
+              <div class="square-container2">
+                <h4>Geo Fencing</h4>
+                <p>
+                  The Geo fencing feature enables you to set up geographic
+                  boundaries around the areas of your interest. Receive
+                  automated alerts when the object enters or leaves marked
+                  boundaries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="square-flip">
+            <div
+              class="square bg-icon"
+              data-background="img/features/maintenance-alerts-feature.png"
+            >
+              <div
+                class="square-container d-flex align-items-end justify-content-center"
+              >
+                <div class="box-title">
+                  <h4>Mechanical</h4>
+                </div>
+              </div>
+            </div>
+            <div class="square2">
+              <div class="square-container2">
+                <h4>Mechanical</h4>
+                <p>
+                  Easily stay on top of preventative maintenance to prevent
+                  costly repairs.
+                </p>
+                <p>
+                  The maintenance tool will enable you to setup a vehicle
+                  maintenance schedule to remind you of: oil changes, engine
+                  checks, tire rotations, license renewals and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="square-flip">
+            <div
+              class="square bg-icon"
+              data-background="img/features/asset-tracking-notification-feature.png"
+            >
+              <div
+                class="square-container d-flex align-items-end justify-content-center"
+              >
+                <div class="box-title">
+                  <h4>Instant Notifications</h4>
+                </div>
+              </div>
+            </div>
+            <div class="square2">
+              <div class="square-container2">
+                <h4>Instant Notifications</h4>
+                <p>
+                  Receive instant alerts about your tracked object, know when it
+                  enters or exits a geo-zone, when it is speeding and determine
+                  its stopovers. SOS alarms will turn on in case of any theft.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="square-flip">
+            <div
+              class="square bg-icon"
+              data-background="img/features/fuel-monitoring-feature.png"
+            >
+              <div
+                class="square-container d-flex align-items-end justify-content-center"
+              >
+                <div class="box-title">
+                  <h4>Fuel Monitoring</h4>
+                </div>
+              </div>
+            </div>
+            <div class="square2">
+              <div class="square-container2">
+                <h4>Fuel Monitoring</h4>
+                <p>
+                  Easily check the tank’s fuel level and fuel consumption along
+                  the route in real-time.
+                </p>
+                <p>
+                  Receive instant notiﬁcation in case a fuel drop occurs, along
+                  with a relevant fuel report (with graph)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="square-flip">
+            <div
+              class="square bg-icon"
+              data-background="img/features/engine-remote-immobilization-feature.png"
+            >
+              <div
+                class="square-container d-flex align-items-end justify-content-center"
+              >
+                <div class="box-title">
+                  <h4>Remote Immobilization</h4>
+                </div>
+              </div>
+            </div>
+            <div class="square2">
+              <div class="square-container2">
+                <h4>Remote Immobilization</h4>
+                <p>
+                  Remotely shut off your engine from your phone to prevent
+                  ignition and stop theft. Have peace of mind when leaving your
+                  machine on job sites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- hr -->
-    <hr class="line-vr-section">
-    
-    {% include "sections/contact-banner.html" %}
+  </div>
+  <!-- hr -->
+  <hr class="line-vr-section" />
 
+  {% include "sections/contact-banner.html" %}
 </main>
 
 {% endblock %}
