@@ -37,7 +37,7 @@ function copyFiles() {
 
 function processCss() {
   return gulp
-    .src("./css/**/*.css")
+    .src(["./css/**/*.css", "./css/**/*.min.css"])
     .pipe(
       purgecss({
         content: ["./html/**/*.html", "./js/**/*.js"],
