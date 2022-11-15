@@ -1,10 +1,14 @@
 {% extends "parts/template.html" %} {% set page ='index' %} {% block meta %}
 <title>RECONO GPS - Asset Tracking Services</title>
-<meta content="Secure, track and manage your heavy duty assets on every job site from your phone." name="description" />
-<meta content="gps,track,asset,tracking,excavator,skid steer,job site,fleet" name="keywords" />
-{% endblock %}
-
-{% block main %}
+<meta
+  content="Secure, track and manage your heavy duty assets on every job site from your phone."
+  name="description"
+/>
+<meta
+  content="gps,track,asset,tracking,excavator,skid steer,job site,fleet"
+  name="keywords"
+/>
+{% endblock %} {% block main %}
 
 <main id="main">
   <!-- Slider -->
@@ -13,92 +17,154 @@
     <img src="img/mockups/header.png" id="header-mockup" />
     <!-- Slides -->
     <div class="owl-carousel owl-theme">
-        <!-- The opacity on the image is made with "data-overlay-dark="number".You can change it using the numbers 0-9. -->
-        <div class="text-left item bg-img" data-overlay-dark="3" data-background="img/slider/excavator-header.jpg">
-            <div class="v-middle caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 mt-30">
-                            <div class="o-hidden">
-                                <h6>Track your machines</h6>
-                                <h1>GPS Asset Tracking</h1>
-                                <p>Get real-time updates on the location and operational status of your entire fleet 24/7. View speed, fuel level, idle time and more.</p> 
-                                <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
+      <!-- The opacity on the image is made with "data-overlay-dark="number".You can change it using the numbers 0-9. -->
+      <div
+        class="text-left item bg-img"
+        data-overlay-dark="3"
+        data-background="img/slider/excavator-header.jpg"
+      >
+        <div class="v-middle caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 mt-30">
+                <div class="o-hidden">
+                  <h6>Track your machines</h6>
+                  <h1>GPS Asset Tracking</h1>
+                  <p>
+                    Get real-time updates on the location and operational status
+                    of your entire fleet 24/7. View speed, fuel level, idle time
+                    and more.
+                  </p>
+                  <a href="contact.html" class="btn float-btn flat-btn"
+                    >Get Started</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="text-left item bg-img" data-overlay-dark="3" data-background="img/slider/jobsite-header.jpg">
-            <div class="v-middle caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 mt-30">
-                            <div class="o-hidden">
-                                <h6>Secure your job sites</h6>
-                                <h1>Geo Fencing</h1>
-                                <p>Define geographical areas to track the movement of your machines. Get instantly alerted if your machines leave the job site or enter a delivery zone.</p> 
-                                <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div
+        class="text-left item bg-img"
+        data-overlay-dark="3"
+        data-background="img/slider/jobsite-header.jpg"
+      >
+        <div class="v-middle caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 mt-30">
+                <div class="o-hidden">
+                  <h6>Secure your job sites</h6>
+                  <h1>Geo Fencing</h1>
+                  <p>
+                    Define geographical areas to track the movement of your
+                    machines. Get instantly alerted if your machines leave the
+                    job site or enter a delivery zone.
+                  </p>
+                  <a href="contact.html" class="btn float-btn flat-btn"
+                    >Get Started</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="text-left item bg-img" data-overlay-dark="4" data-background="img/slider/maintenance-header.jpg">
-            <div class="v-middle caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 mt-30">
-                            <div class="o-hidden">
-                                <h6>Never miss a tune-up</h6>
-                                <h1>Maintenance Alerts</h1>
-                                <p>Automatic tracking of engine hours, oil levels, battery life, and more diagnostics. Get alerted when your machine needs service to avoid major repairs.</p> 
-                                <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div
+        class="text-left item bg-img"
+        data-overlay-dark="4"
+        data-background="img/slider/maintenance-header.jpg"
+      >
+        <div class="v-middle caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 mt-30">
+                <div class="o-hidden">
+                  <h6>Never miss a tune-up</h6>
+                  <h1>Maintenance Alerts</h1>
+                  <p>
+                    Automatic tracking of engine hours, oil levels, battery
+                    life, and more diagnostics. Get alerted when your machine
+                    needs service to avoid major repairs.
+                  </p>
+                  <a href="contact.html" class="btn float-btn flat-btn"
+                    >Get Started</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</header>
+  </header>
 
+  {% include "sections/clients.html" %}
 
-{% include "sections/clients.html" %}
-
-<!-- Projects -->
-<div class="savoye-project section-padding-bottom">
+  <!-- Projects -->
+  <div class="savoye-project section-padding-bottom">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-                <div class="section-title">Features</div>
-            </div>
+      <div class="row">
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+          <div class="section-title">Features</div>
         </div>
-        <div class="row">
-                <div class="col-md-12">
-                    <div class="projects3 animate-box" data-animate-effect="fadeInUp">
-                        <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="recono-gps-asset-tracking-feature" class="img-fluid"></a></figure>
-                        <div class="caption">
-                            <h6>Track your machines</h6>
-                            <h4>GPS Asset Tracking</h4>
-                            <p>Track the exact location of your objects (vehicles, people, phones, bikes, containers, etc.) online and in real-time. Select any map option: Google, Satellite, OSM, etc.</p>
-                            <p>View additional information about the tracked objects, including their speed, exact address, fuel consumption, travel history, etc.</p>
-                            <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="projects3 left animate-box" data-animate-effect="fadeInUp">
-                        <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="recono-gps-asset-tracking-geofencing-feature" class="img-fluid"></a></figure>
-                        <div class="caption">
-                            <h6>Secure your job sites</h6>
-                            <h4>Geo Fencing</h4>
-                            <p>The Geo fencing feature enables you to set up geographic boundaries around the areas of your interest. Receive automated alerts when the object enters or leaves marked boundaries.</p>
-                            <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
-                        </div>
-                    </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="projects3 animate-box" data-animate-effect="fadeInUp">
+            <figure>
+              <a href="project-page.html"
+                ><img
+                  src="img/features/asset-tracking-feature.png"
+                  alt="recono-gps-asset-tracking-feature"
+                  class="img-fluid"
+              /></a>
+            </figure>
+            <div class="caption">
+              <h6>Track your machines</h6>
+              <h4>GPS Asset Tracking</h4>
+              <p>
+                Track the exact location of your objects (vehicles, people,
+                phones, bikes, containers, etc.) online and in real-time. Select
+                any map option: Google, Satellite, OSM, etc.
+              </p>
+              <p>
+                View additional information about the tracked objects, including
+                their speed, exact address, fuel consumption, travel history,
+                etc.
+              </p>
+              <a href="contact.html" class="btn float-btn flat-btn"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <div
+            class="projects3 left animate-box"
+            data-animate-effect="fadeInUp"
+          >
+            <figure>
+              <a href="project-page.html"
+                ><img
+                  src="img/features/geo-fence-feature.png"
+                  alt="recono-gps-asset-tracking-geofencing-feature"
+                  class="img-fluid"
+              /></a>
+            </figure>
+            <div class="caption">
+              <h6>Secure your job sites</h6>
+              <h4>Geo Fencing</h4>
+              <p>
+                The geo fencing feature enables you to set up geographic
+                boundaries around the areas of your interest. Receive automated
+                alerts when the object enters or leaves marked boundaries.
+              </p>
+              <a href="contact.html" class="btn float-btn flat-btn"
+                >Get Started</a
+              >
+            </div>
+          </div>
 
-                    <!-- <div class="projects3 animate-box" data-animate-effect="fadeInUp">
+          <!-- <div class="projects3 animate-box" data-animate-effect="fadeInUp">
                         <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="" class="img-fluid"></a></figure>
                         <div class="caption">
                             <h6>Extend engine life</h6>
@@ -126,7 +192,7 @@
                             <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
                         </div>
                     </div> -->
-                    <!-- <div class="projects3 animate-box" data-animate-effect="fadeInUp">
+          <!-- <div class="projects3 animate-box" data-animate-effect="fadeInUp">
                         <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="" class="img-fluid"></a></figure>
                         <div class="caption">
                             <h6>Architecture</h6>
@@ -135,65 +201,119 @@
                             <a href="project-page.html" class="btn float-btn flat-btn">Discover</a>
                         </div>
                     </div> -->
-                </div>
-            </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-{% include "sections/testimonials.html" %}
+  {% include "sections/testimonials.html" %}
 
-<!-- Features 2 -->
-<div class="savoye-project section-padding">
+  <!-- Features 2 -->
+  <div class="savoye-project section-padding">
     <div class="container">
-        <div class="row">
-                <div class="col-md-12">
-                    <div class="projects3 animate-box" data-animate-effect="fadeInUp">
-                        <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="recono-gps-asset-tracking-maintenance-feature" class="img-fluid"></a></figure>
-                        <div class="caption">
-                            <h6>Extend engine life</h6>
-                            <h4>Maintenance</h4>
-                            <p>Easily stay on top of preventative maintenance to prevent costly repairs.</p>
-                            <p>The maintenance tool will enable you to setup a vehicle maintenance schedule to remind you of the following vehicle services:</p>
-                            <ul class="list">
-                                <li>Oil Change</li>
-                                <li>Engine Check</li>
-                                <li>Tire Rotation</li>
-                                <li>Warranty Expiration</li>
-                                <li>License Renewal</li>
-                                <li>Preventative Maintenance Routine</li>
-                                <li>Keep a history record of all previously completed services</li>
-                            </ul>
-                            <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="projects3 left animate-box" data-animate-effect="fadeInUp">
-                        <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="recono-gps-asset-tracking-notifications-feature" class="img-fluid"></a></figure>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="projects3 col animate-box" data-animate-effect="fadeInUp">
+            <figure>
+              <a href="project-page.html"
+                ><img
+                  src="img/features/maintenance-alerts-main-feature.png"
+                  alt="recono-gps-asset-tracking-trip-playback-feature"
+                  class="img-fluid"
+              /></a>
+            </figure>
+            <div class="caption">
+              <h6>Extend engine life</h6>
+              <h4>Maintenance</h4>
+              <p>
+                Easily stay on top of preventative maintenance to prevent costly
+                repairs.
+              </p>
+              <p>
+                The maintenance tool will enable you to setup a vehicle
+                maintenance schedule to remind you of the following vehicle
+                services:
+              </p>
+              <ul class="list">
+                <li>Oil Change</li>
+                <li>Engine Check</li>
+                <li>Tire Rotation</li>
+                <li>Warranty Expiration</li>
+                <li>License Renewal</li>
+                <li>Preventative Maintenance Routine</li>
+                <li>
+                  Keep a history record of all previously completed services
+                </li>
+              </ul>
+              <a href="contact.html" class="btn float-btn flat-btn"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <div
+            class="projects3 left animate-box"
+            data-animate-effect="fadeInUp"
+          >
+            <figure>
+              <a href="project-page.html"
+                ><img
+                  src="img/features/trip-playback-feature.png"
+                  alt="recono-gps-asset-tracking-trip-playback-feature"
+                  class="img-fluid"
+              /></a>
+            </figure>
+            <div class="caption">
+              <h6>Invaluable historical records</h6>
+              <h4>Trip Playback</h4>
+              <p>
+                Playback your asset's route, speed, stops and statistical
+                information between a selected time period.
+              </p>
+              <a href="contact.html" class="btn float-btn flat-btn"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <div class="projects3 animate-box" data-animate-effect="fadeInUp">
+            <figure>
+              <a href="project-page.html"
+                ><img
+                  src="img/features/reports-main-feature.png"
+                  alt="recono-gps-asset-tracking-notifications-feature"
+                  class="img-fluid"
+              /></a>
+            </figure>
+            <div class="caption">
+              <h6>Stay updated</h6>
+              <h4>Automated Reports</h4>
+              <p>
+                Email detailed reports containing your asset's Trip Reports,
+                Stops, Runtime, Overview or Alarms. Share this information with
+                your team or keep it for your own records.
+              </p>
+              <a href="contact.html" class="btn float-btn flat-btn"
+                >Get Started</a
+              >
+            </div>
+          </div>
+          <!-- <div class="projects3 animate-box" data-animate-effect="fadeInUp">
+                        <figure><a href="project-page.html"><img src="img/features/reports-main-feature.png" alt="recono-gps-asset-tracking-notifications-feature" class="img-fluid"></a></figure>
                         <div class="caption">
                             <h6>Stay updated</h6>
                             <h4>Instant Notifications</h4>
                             <p>Receive instant alerts about your tracked object, know when it enters or exits a geo-zone, when it is speeding and determine its stopovers. SOS alarms will turn on in case of any theft.</p>
                             <a href="contact.html" class="btn float-btn flat-btn">Get Started</a>
                         </div>
-                    </div>
-                    <!-- <div class="projects3 animate-box" data-animate-effect="fadeInUp">
-                        <figure><a href="project-page.html"><img src="img/mockups/1.png" alt="" class="img-fluid"></a></figure>
-                        <div class="caption">
-                            <h6>Architecture</h6>
-                            <h4>Fuel Monitoring</h4>
-                            <p>Savoye inila duman aten elit finibus vivera alacus themone the drudean seneice miuscibe noneten the fermen. Savoye architecture duiman at elit finibus viverra nec a lacus themo drudeane sene voice the volume fermen.</p>
-                            <a href="project-page.html" class="btn float-btn flat-btn">Discover</a>
-                        </div>
                     </div> -->
-                </div>
-            </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- hr -->
-<hr class="line-vr-section">
+  <!-- hr -->
+  <hr class="line-vr-section" />
 
-{% include "sections/contact-banner.html" %}
-
+  {% include "sections/contact-banner.html" %}
 </main>
 <!-- End #main -->
 
