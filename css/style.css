@@ -2655,7 +2655,7 @@ line-height: 1em;
      border-right: 1px solid #323232;
      border-bottom: 1px solid #323232;
      overflow: hidden;
-     background: var(--surface);
+     background: var(--background);
      height: 180px
  }
  .clients img {
@@ -2663,7 +2663,7 @@ line-height: 1em;
      width: 150px;
  }
 .clients .client-logo:hover {
-    background: #323232;
+    background: var(--surface);
 }
 
 
@@ -2698,7 +2698,6 @@ line-height: 1em;
   float: left;
 }
 .testimonials .item-box .info .cont {
-      margin-left: 85px;
     margin-top: 10px;
 }
 .testimonials .item-box .info .cont h6 {
