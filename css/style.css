@@ -3475,6 +3475,36 @@ a.flat-btn {
   stroke: var(--primary);
 }
 
+/* ======= Articles ========== */
+
+.article-box {
+  background-color: var(--surface);
+  padding: 20px;
+  -webkit-box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0);
+  transition: all 400ms;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+}
+
+.article-box:hover {
+  -webkit-box-shadow: 0 2px 18px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 18px 7px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.article-box p {
+  padding: 0;
+}
+
+.article-box strong {
+  padding: 0;
+  color: var(--primary);
+}
+
+/* ======= Articles End ========== */
+
 /* ======= Coming Soon style ======= */
 .comming {
   min-height: 100vh;
