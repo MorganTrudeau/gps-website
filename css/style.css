@@ -3486,6 +3486,7 @@ a.flat-btn {
   z-index: 0;
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .article-box:hover {
