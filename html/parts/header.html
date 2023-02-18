@@ -8,7 +8,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-menu"></i></span> </button>
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto mr-auto">
                 <li class="nav-item"><a class="nav-link {% if page == 'index' %}active{% endif %}" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link {% if page == 'about' %}active{% endif %}" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link {% if page == 'features' %}active{% endif %}" href="features.html">Features</a></li>
@@ -33,7 +33,11 @@
                     </ul>
                 </li> -->
                 <li class="nav-item"><a class="nav-link {% if page == 'contact' %}active{% endif %}" href="contact.html">Contact</a></li>
+                <!-- <li class="nav-item"><a class="nav-link {% if page == 'help' %}active{% endif %}" href="help.html">Help</a></li> -->
             </ul>
+            <form class="form-inline">
+                <a class="btn btn-sm btn-outline-primary" href="https://app.reconogps.com" type="button">Login</a>
+              </form>
         </div>
     </div>
 </nav>

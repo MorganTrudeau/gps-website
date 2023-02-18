@@ -1,0 +1,47 @@
+{% extends "parts/template.html" %} {% set page ='help' %} {% block meta %}
+<title>RECONO GPS - Asset Tracking Services - Contact Us</title>
+<meta content="Contact us to schedule your GPS device installation and start tracking your fleet today." name="description" />
+<meta content="gps,track,asset,tracking,excavator,skid steer,job site,fleet" name="keywords" />
+
+<!-- Google tag (gtag.js) - Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-250116109-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-250116109-1");
+</script>
+{% endblock %}
+
+{% block main %}
+
+<main id="main">
+
+     <!-- Header Banner -->
+     <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="3" data-background="img/slider/gps-asset-tracking-construction-job-site.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center caption mt-90">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hr -->
+    <hr class="line-vr-section">
+    <!-- hr -->
+    {% include "sections/faq.html" %}
+    <!-- hr -->
+    <hr class="line-vr-section">
+    
+    {% include "sections/contact-banner.html" %}
+
+</main>
+
+{% endblock %}

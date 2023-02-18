@@ -46,7 +46,35 @@
   --primary: #cdad58; /* c5a47e */
   --background: #1f1f1f;
   --surface: #272727;
+  --text-color: #fff;
+  --text-meta-color: #999;
 }
+
+.btn {
+  color: var(--text-color) !important;
+  font-weight: 500;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--text-color) !important;
+  background:rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-color) !important;
+}
+
+/* *[class*='-primary']{
+  border-color: var(--primary);
+}
+
+*[class*='-primary']:hover{
+  background-color: var(--primary);
+  border-color: var(--primary);
+} */
 
 /* ======= Basic style ======= */
 html,
@@ -580,7 +608,8 @@ hr {
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
 }
 .navbar .container {
   height: 100%;
@@ -607,6 +636,7 @@ hr {
 }
 .navbar .navbar-nav .active {
   color: var(--primary) !important;
+  font-weight: 600;
 }
 .nav-scroll {
   background: var(--surface);
@@ -3263,12 +3293,12 @@ a.flat-btn {
   -ms-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-.btn:hover:before {
+/* .btn:hover:before {
   width: 30px;
 }
 .btn:hover {
   padding-left: 60px;
-}
+} */
 /* button line */
 .btn-line {
   position: relative;
