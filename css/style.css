@@ -359,7 +359,7 @@ input[type="checkbox"] {
 .v-middle-top {
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 37.5%;
   left: 0;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
@@ -946,6 +946,8 @@ hr {
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
   pointer-events: none;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .header-video-active {
