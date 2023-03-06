@@ -48,6 +48,7 @@
   --surface: #272727;
   --text-color: #fff;
   --text-meta-color: #999;
+  --min-header-height: 900px;
 }
 
 .btn {
@@ -931,12 +932,13 @@ hr {
   position: absolute;
   z-index: 98;
   pointer-events: none;
+  min-height: var(--min-header-height);
 }
 
 .header-video {
-  width: 450px;
-  height: 253px;
-  margin-top: 450px;
+  width: auto;
+  height: 230px;
+  aspect-ratio: 1.7777;
   pointer-events: auto;
   opacity: 0.9;
   -webkit-transition: -webkit-opacity 0.3s;
@@ -954,6 +956,7 @@ hr {
 .header-video-play-wrapper {
   position: relative;
   pointer-events: auto;
+  margin-top: 480px;
 }
 
 .header-video-play-wrapper-active {
@@ -968,7 +971,7 @@ hr {
   border-radius: 50%;
   pointer-events: auto;
   position: absolute;
-  bottom: 4%;
+  bottom: 10%;
   left: 3%;
   display: flex;
   align-items: center;
@@ -993,7 +996,8 @@ hr {
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: var(--min-header-height);
   overflow: hidden;
   z-index: 1000;
 }
@@ -1097,6 +1101,14 @@ hr {
     width: 550px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-video {
+    height: 280px !important;
+  }
+  .header-video-play-wrapper {
+    margin-top: 430px;
+  }
+}
 @media screen and (max-width: 1080px) {
   #header-mockup {
     width: 500px;
@@ -1132,8 +1144,10 @@ hr {
   .header-video {
     width: 100% !important;
     height: auto;
-    aspect-ratio: 1.7777;
-    margin-top: 500px;
+  }
+  .header-video-play-wrapper {
+    margin-top: 470px;
+    width: 100% !important;
   }
   .header-video-play-button i {
     font-size: 25px;
@@ -1155,6 +1169,7 @@ hr {
 .slider .owl-item,
 .slider-fade .owl-item {
   height: 100vh;
+  min-height: var(--min-header-height);
   position: relative;
 }
 .slider .item,
