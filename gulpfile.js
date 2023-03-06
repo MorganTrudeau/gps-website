@@ -32,7 +32,11 @@ function copyFiles() {
     .src("./fonts/**/*")
     .pipe(gulp.dest(distDir + "fonts/"));
 
-  return mergeStream(jsFolder, imgFolder, fontsFolder);
+  const assetsFolder = gulp
+    .src("./assets/**/*")
+    .pipe(gulp.dest(distDir + "assets/"));
+
+  return mergeStream(jsFolder, imgFolder, fontsFolder, assetsFolder);
 }
 
 function processCss() {
