@@ -30,6 +30,86 @@
   <header class="header slider-fade">
     <!-- Phone Mockup -->
     <img src="https://ik.imagekit.io/r8dy3rfn0/header.png" id="header-mockup" />
+
+    <script>
+      function setVideoListeners() {
+        console.log("Setting video listeners");
+
+        let video = document.getElementById("header-video");
+        let playButton = document.getElementById("header-video-play-button");
+
+        video.onended = setVideoInactive;
+      }
+
+      function setVideoInactive() {
+        let video = document.getElementById("header-video");
+        let playButton = document.getElementById("header-video-play-button");
+        let playWrapper = document.getElementById("header-video-play-wrapper");
+
+        video.classList.remove("header-video-active");
+        video.controls = false;
+        video.currentTime = 0;
+        playButton.classList.remove("hidden");
+        playWrapper.classList.remove("header-video-play-wrapper-active");
+      }
+
+      function playVideo() {
+        let video = document.getElementById("header-video");
+        let playButton = document.getElementById("header-video-play-button");
+        let playWrapper = document.getElementById("header-video-play-wrapper");
+
+        if (
+          playWrapper.classList.contains("header-video-play-wrapper-active")
+        ) {
+          return;
+        }
+
+        video.play();
+        video.controls = true;
+        video.classList.add("header-video-active");
+        playButton.classList.add("hidden");
+        playWrapper.classList.add("header-video-play-wrapper-active");
+      }
+
+      window.onload = setVideoListeners;
+    </script>
+
+    <div class="text-left item bg-img header-video-container">
+      <div class="v-middle caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mt-30">
+              <div class="o-hidden">
+                <div
+                  class="header-video-play-wrapper"
+                  id="header-video-play-wrapper"
+                  onclick="playVideo()"
+                >
+                  <video
+                    class="header-video"
+                    id="header-video"
+                  >
+                    <source
+                      src="https://ik.imagekit.io/employeelink/recono/recono-promo-short_7xtpQXfO2.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div
+                    class="header-video-play-button"
+                    id="header-video-play-button"
+                    onclick="playVideo()"
+                  >
+                    <i class="ti-control-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Slides -->
     <div class="owl-carousel owl-theme">
       <!-- The opacity on the image is made with "data-overlay-dark="number".You can change it using the numbers 0-9. -->
@@ -38,7 +118,7 @@
         data-overlay-dark="3"
         data-background="https://ik.imagekit.io/r8dy3rfn0/Slider/excavator-header.jpg"
       >
-        <div class="v-middle caption">
+        <div class="v-middle-top caption">
           <div class="container">
             <div class="row">
               <div class="col-md-8 mt-30">
@@ -64,7 +144,7 @@
         data-overlay-dark="3"
         data-background="https://ik.imagekit.io/r8dy3rfn0/Slider/jobsite-header.jpg"
       >
-        <div class="v-middle caption">
+        <div class="v-middle-top caption">
           <div class="container">
             <div class="row">
               <div class="col-md-8 mt-30">
@@ -90,7 +170,7 @@
         data-overlay-dark="3"
         data-background="https://ik.imagekit.io/r8dy3rfn0/Slider/maintenance-header.jpg"
       >
-        <div class="v-middle caption">
+        <div class="v-middle-top caption">
           <div class="container">
             <div class="row">
               <div class="col-md-8 mt-30">
