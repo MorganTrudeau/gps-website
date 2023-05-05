@@ -36,7 +36,9 @@ function copyFiles() {
     .src("./assets/**/*")
     .pipe(gulp.dest(distDir + "assets/"));
 
-  return mergeStream(jsFolder, imgFolder, fontsFolder, assetsFolder);
+  const siteMap = gulp.src("sitemap.xml").pipe(gulp.dest(distDir));
+
+  return mergeStream(jsFolder, imgFolder, fontsFolder, assetsFolder, siteMap);
 }
 
 function processCss() {
